@@ -1,16 +1,16 @@
 const pg = require("pg");
+const DB_URL = process.env.DATABASE_URL;
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL environment variable is not set");
-}
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+if (!DB_URL) throw new Error("no database URL env var!");
 
 const options = {
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
+  connectionString: DB_URL,
 };
 
 const db = new pg.Pool(options);
 
-module.exports = db;
+export default db;
