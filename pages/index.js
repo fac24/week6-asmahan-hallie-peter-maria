@@ -5,7 +5,10 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
   
-<h1>Little Garden</h1>
-  
+<div>
+  <h1>Little Garden</h1>
+
+</div>
+
   )
 }
