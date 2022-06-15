@@ -17,15 +17,7 @@ export default function Home({ categories }) {
   console.log(categories);
   return (
     <Layout home >
-      <Head>
-        <title>
-            {siteTitle}
-        </title>
-        <div>
-      <p>Hello Flowers</p>
-    </div>
-      </Head>
-   
+    <p>Add your buttons here 🙂🌱🌺</p>
     </Layout >
   );
 }

@@ -1,24 +1,37 @@
 import Head from "next/head";
-//import { useLayoutEffect } from "react/cjs/react.production.min"
+import Link from "next/link";
 //import PlantImages from "next/images"
+import styles from './layout.module.css'; 
 
-export const siteTitle = "FLOWER POWER ......"
+export const siteTitle = "Little Garden"
 
+// The children argument is all of the elemnents nested on the Layout component (in index.js)
+// home is an argument sent only from the home root Layout component - if "home" is not then return a title that links back to "/" 
 export default function Layout({ children, home }) {
     return (
-        <>
+        <div className={styles.container}>
          <Head>
-         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="eccommerce site for plant shop"
-        />
-        <meta name="og:title" content={siteTitle} />
+         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+         <title>{siteTitle}</title>
          </Head>
-         <header>
+         <header className={styles.header}>
+         {home ? (
+             <>
              <h1>{siteTitle}</h1>
+             </>
+         ) : (
+      
+         <Link href="/">
+            <a>
+            <h1>{siteTitle}</h1>
+             </a>
+            </Link>
+         )}
          </header>
-        </>
+         <p className={styles.plant-slogan}>Plant a little love, watch a miracle grow.</p>
+         <main>{children}</main>
+        
+        </div>
     )
 }
 
