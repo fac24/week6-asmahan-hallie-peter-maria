@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import { getCategories } from "../database/model.js";
+//import Image from "next/image";
+//import styles from "../styles/Home.module.css";
+import Layout, {siteTitle} from "../components/layout";
 
 export async function getStaticProps() {
   const categories = await getCategories();
@@ -16,8 +17,8 @@ export async function getStaticProps() {
 export default function Home({ categories }) {
   console.log(categories);
   return (
-    <div>
-      <h1>Little Garden</h1>
+    <Layout home >
+        <div>
       <section className="categories">
         <ul>
           {categories.length ? (
@@ -38,5 +39,6 @@ export default function Home({ categories }) {
         </ul>
       </section>
     </div>
+    </Layout >
   );
 }
