@@ -39,10 +39,10 @@ INSERT INTO plants (plant_name, plant_kind, price, img_url, plant_description) V
     ('Carrots', 3, 5),
     ('Courgette', 3, 5),
     ('Chilli', 3, 5),
-    ('Lavender', 4, 5),
-    ('Roses', 4, 5),
-    ('Peony', 4, 5),
-    ('Sunflower', 4, 5),
-    ('Daisy', 4, 5);
+    ('Lavender', 4, 5, "https://images.unsplash.com/photo-1445510491599-c391e8046a68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
+    ('Roses', 4, 5, "https://images.unsplash.com/photo-1556712691-5c39e0e32a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
+    ('Peony', 4, 5, "https://images.unsplash.com/photo-1626976109816-08cef8600d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2013&q=80", "description here"),
+    ('Sunflower', 4, 5, "https://images.unsplash.com/photo-1552160793-cbaf3ebcba72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
+    ('Daisy', 4, 5, "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here");
 
 COMMIT;
