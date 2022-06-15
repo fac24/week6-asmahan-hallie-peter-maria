@@ -35,15 +35,16 @@ INSERT INTO plants (plant_name, plant_kind, price, img_url, plant_description) V
     ('Thyme', 2, 5),
     ('Rosemary', 2, 5),
     ('Dill', 2, 5),
-    ('Tomatoes', 3, 5),
-    ('Peppers', 3, 5),
-    ('Carrots', 3, 5),
-    ('Courgette', 3, 5),
-    ('Chilli', 3, 5),
+    ('Tomatoes', 3, 5, "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHRvbWF0b3N8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "get your freshly ripe and flavourable tomato's"),
+    ('Peppers', 3, 5, "https://images.unsplash.com/photo-1592548868664-f8b4e4b1cfb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVwcGVyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "these peppers are great with a salad"),
+    ('Carrots', 3, 5, "https://images.unsplash.com/photo-1639427444459-85a1b6ac2d68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fycm90c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "carrots freshly picked"),
+    ('Aubergine', 3, 5, "https://images.unsplash.com/photo-1639428134238-b548770d4b77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YXViZXJnaW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "aubegines in stock for purchase"),
+    ('Chilli', 3, 5, "https://images.unsplash.com/photo-1615375557967-227168b41ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbGxpfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "grab a little spice in your life"),
     ('Lavender', 4, 5, "https://images.unsplash.com/photo-1445510491599-c391e8046a68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
     ('Roses', 4, 5, "https://images.unsplash.com/photo-1556712691-5c39e0e32a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
     ('Peony', 4, 5, "https://images.unsplash.com/photo-1626976109816-08cef8600d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2013&q=80", "description here"),
     ('Sunflower', 4, 5, "https://images.unsplash.com/photo-1552160793-cbaf3ebcba72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here"),
     ('Daisy', 4, 5, "https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", "description here");
+
 
 COMMIT;
