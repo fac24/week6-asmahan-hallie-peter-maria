@@ -20,17 +20,20 @@ export default function Layout({ children, home }) {
              <h1>{siteTitle}</h1>
              </>
          ) : (
-         <Link href="/">
+         <Link>
             <a>
             <h1>{siteTitle}</h1>
              </a>
         </Link>
          )}
          </header>
-         <p className={styles.plant-slogan}>Plant a little love, watch a miracle grow.</p>
+         <p>Plant a little love, watch a miracle grow.</p>
          <main>{children}</main>
         
         </div>
     )
 }
+
+//NOTE: please add href="/" to <Link> with the <a>
+// We just had to remove it for now for vercel happiness 
 
