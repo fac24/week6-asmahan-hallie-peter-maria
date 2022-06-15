@@ -11,7 +11,9 @@ CREATE TABLE plants (
     id SERIAL PRIMARY KEY,
     plant_name VARCHAR(255),
     plant_kind INTEGER REFERENCES plant_type(id),
-    price INTEGER
+    price INTEGER,
+    img_url TEXT NOT NULL,
+    plant_description TEXT
 );
 
 INSERT INTO plant_type (plant_kind) VALUES 
@@ -21,8 +23,8 @@ INSERT INTO plant_type (plant_kind) VALUES
 ('garden plants');
 
 
-INSERT INTO plants (plant_name, plant_kind, price) VALUES 
-    ('Jade tree', 1, 5),
+INSERT INTO plants (plant_name, plant_kind, price, img_url, plant_description) VALUES 
+    ('Jade tree', 1, 5, "URL HERE", "description here"),
     ('Aloe', 1, 5),
     ('Yuca', 1, 5),
     ('Wax Agave', 1, 5),
