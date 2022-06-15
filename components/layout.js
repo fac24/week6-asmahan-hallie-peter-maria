@@ -20,12 +20,11 @@ export default function Layout({ children, home }) {
              <h1>{siteTitle}</h1>
              </>
          ) : (
-      
          <Link href="/">
             <a>
             <h1>{siteTitle}</h1>
              </a>
-            </Link>
+        </Link>
          )}
          </header>
          <p className={styles.plant-slogan}>Plant a little love, watch a miracle grow.</p>
