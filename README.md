@@ -1,6 +1,8 @@
 # Little Garden 
 ### An e-commerce site for plant-lovers to buy fresh, home-grown plants.
 
+### Made with React, nextJS and PostgreSQL. 
+
 Designed and developed by: 
 - Asmahan (UX/UI);
 - Hallie (DevOps);
@@ -11,8 +13,8 @@ Designed and developed by:
 ## User Stories
 As a user, I want to:
 - [ ] browse the plants on your store;
-- [ ] see each category of plant and click on one;
-- [ ] see a description of each product;
+- [x] see each category of plant and click on one;
+- [ ] see a description of each product; and
 - [ ] select a product and select the size & quantity that I want
 
 ## Visit the site (as a user):
