@@ -15,7 +15,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ categories }) {
-  console.log(categories);
   return (
     <Layout home >
         <div>
