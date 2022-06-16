@@ -26,7 +26,7 @@ export default function Home({ categories }) {
             categories.map((category) => (
               <Link href={`/categories/${category.id}`} key={category.id}>
                 <a>
-                  <li>
+                  <li className={styles.individual}>
                     <div>
                       <h2>{category.plant_kind}</h2>
                     </div>
