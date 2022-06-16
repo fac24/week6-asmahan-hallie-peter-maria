@@ -5,6 +5,7 @@ module.exports = {
   images: {
     domains: [
       "images.unsplash.com",
+      "unsplash.com",
       "media.istockphoto.com",
   ],
   },
