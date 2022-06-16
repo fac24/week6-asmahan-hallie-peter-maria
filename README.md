@@ -1,3 +1,6 @@
+
+![garden](https://media4.giphy.com/media/3ov9jHiEzknijxAD3q/200w.webp?cid=ecf05e471b0exlxh7jdcb0i5inlwb10iqk63i1y0a6o3pneu&rid=200w.webp&ct=g)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
