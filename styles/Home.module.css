@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 0 2rem;
 }
 
@@ -113,4 +113,16 @@
     width: 100%;
     flex-direction: column;
   }
+} */
+
+.categories {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20rem;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column;
 }
