@@ -1,7 +1,7 @@
 # Little Garden 
 ### An e-commerce site for plant-lovers to buy fresh, home-grown plants.
 
-### Made with React, nextJS and PostgreSQL. 
+### Built with React, next.JS and PostgreSQL. 
 
 Designed and developed by: 
 - Asmahan (UX/UI);
