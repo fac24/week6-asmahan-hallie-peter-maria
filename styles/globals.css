@@ -16,6 +16,11 @@ a {
   box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
 }
 
+a:hover {
+  color: #3C8256;
+  background-color: #D5C991;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -50,4 +55,10 @@ ul {
   border-radius: 50%;
 } */
 
-
+@media only screen and (min-width: 1414px) {
+  ul {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+  }
+}
