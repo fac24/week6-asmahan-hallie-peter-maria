@@ -13,3 +13,10 @@ export function getCategoryPlants(id) {
     return data.rows;
   });
 }
+
+export function getAllIds() {
+  const SELECT_ALL_IDs = `SELECT id FROM plants`;
+  return db.query(SELECT_ALL_IDs).then((result) => {
+    return result.rows;
+  });
+}
