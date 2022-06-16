@@ -14,8 +14,8 @@ export default function Layout({ children, home }) {
             <Image
             className={styles.container}
             src="/Little-Garden.png"
-            height={250}
-            width={250}
+            height={350}
+            width={350}
             alt="logo"
           />
          <Head>
