@@ -26,9 +26,11 @@ li {
 
 ul {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction:column;
-  width: 100%;
+  flex-wrap: wrap;
+  flex-direction:row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
   position: relative;
   /* flex: 0 0 calc(25% - 20px); */
   /* margin-left: auto;
