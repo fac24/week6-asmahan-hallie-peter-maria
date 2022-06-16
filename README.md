@@ -17,7 +17,7 @@ As a user, I want to:
 
 ## Visit the site (as a user):
 
-Visit: 
+Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 
 
 ## Visit the site (as a developer):
