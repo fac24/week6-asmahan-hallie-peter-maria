@@ -6,3 +6,10 @@ export function getCategories() {
     return data.rows;
   });
 }
+
+export function getCategoryPlants(id) {
+  const GET_PLANTS = `SELECT * FROM plants WHERE plant_kind = $1`;
+  return db.query(GET_PLANTS, [id]).then((data) => {
+    return data.rows;
+  });
+}
