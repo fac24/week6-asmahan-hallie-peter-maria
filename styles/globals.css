@@ -17,9 +17,15 @@ a {
   cursor: pointer;
 }
 
+/* once user hovers then text and background colour changes */
 a:hover {
   color: #3C8256;
   background-color: #D5C991;
+}
+
+/* push down effect once user clicks down */
+a:active {
+  transform: translateY(0.938rem);
 }
 
 * {
