@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 //import PlantImages from "next/images"
 import styles from './layout.module.css'; 
 
@@ -10,6 +11,13 @@ export const siteTitle = "Little Garden"
 export default function Layout({ children, home }) {
     return (
         <div className={styles.container}>
+            <Image
+            className={styles.container}
+            src="/Little-Garden.png"
+            height={350}
+            width={350}
+            alt="logo"
+          />
          <Head>
          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
          <title>{siteTitle}</title>
