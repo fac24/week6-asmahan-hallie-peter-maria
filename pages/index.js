@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { getCategories } from "../database/model.js";
-//import Image from "next/image";
-//import styles from "../styles/Home.module.css";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 import Layout, {siteTitle} from "../components/layout";
 
 export async function getStaticProps() {
@@ -14,12 +14,14 @@ export async function getStaticProps() {
   };
 }
 
+
+
 export default function Home({ categories }) {
   console.log(categories);
   return (
     <Layout home >
         <div>
-      <section className="categories">
+      <section className={styles.categories}>
         <ul>
           {categories.length ? (
             categories.map((category) => (
@@ -29,6 +31,13 @@ export default function Home({ categories }) {
                     <div>
                       <h2>{category.plant_kind}</h2>
                     </div>
+                    <Image
+              // className={styles.singleImage}
+              src={category.category_img}
+              height={200}
+              width={250}
+              alt={category.plant_kind}
+            />
                   </li>
                 </a>
               </Link>
