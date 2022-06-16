@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 // getting categories of plants
 import { getAllIds, getPlant } from "../../database/model.js";
+//import { useState } from "react/cjs/react.production.min";
 
 
 export async function getStaticPaths() {
@@ -30,12 +31,13 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Plant({plantData}) {
-    console.log(plantData)
+    // const [price, setPrice] = useState(plantData[0].price);
+    // const [quantity, setQuantity] = useState(1)
+
   return (
     <Layout home >
          <div>
       <section className="plants">
-        <ul>
           {plantData ? (
               <>
                     <div>
@@ -48,6 +50,7 @@ export default function Plant({plantData}) {
                          alt={plantData[0].plant_name}
                     />
                       <p>{plantData[0].plant_description}</p>
+                      <p>From £{plantData[0].price - 2}</p>
                     </div>
                     <form
                      //onSubmit={handleSubmit} action="/api/basket"
@@ -59,9 +62,9 @@ export default function Plant({plantData}) {
                     //We will need a use state to implement functinality
                     //onChange={(e) => setSize(e.target.value)}
                     >
-                    <option value="seedling"> Seedling </option>
-                     <option value="small"> Small </option>
-                      <option value="medium"> Medium </option>
+                     <option value="seedling"> Seedling £{plantData[0].price - 2}</option>
+                     <option value="small"> Small £{plantData[0].price}</option>
+                     <option value="medium"> Medium £{plantData[0].price + 3}</option>
                     </select>
                     <br></br>
                     <label htmlFor="quantity"> Quantity </label>
@@ -78,9 +81,8 @@ export default function Plant({plantData}) {
                     </>
 
           ) : (
-            <li>No results found</li>
+            <p>Product not found.</p>
           )}
-        </ul>
       </section>
     </div> 
     </Layout >

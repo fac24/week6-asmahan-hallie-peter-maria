@@ -50,7 +50,7 @@ export default function Categories({categoryData}) {
                          alt={plant.plant_name}
                     />
                       <h2>{plant.plant_name}</h2>
-                      <p>From £{plant.price}</p>
+                      <p>From £{plant.price - 2}</p>
                     </div>
                   </li>
                 </a>
