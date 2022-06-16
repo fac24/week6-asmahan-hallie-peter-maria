@@ -34,8 +34,6 @@ a:active {
 
 li {
   list-style: none;
-  /* flex: 25%; */
-  /* border-radius: 50%; */
   flex: 50%;
   margin-bottom: 2rem;
   gap: 5%;
@@ -50,17 +48,8 @@ ul {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* flex: 0 0 calc(25% - 20px); */
-  /* margin-left: auto;
-  margin-right: auto;
-  max-width: 20rem; */
   gap: 5rem;
 }
-
-/* li {
-  flex: 25%;
-  border-radius: 50%;
-} */
 
 @media only screen and (min-width: 1414px) {
   ul {
