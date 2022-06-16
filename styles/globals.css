@@ -14,6 +14,7 @@ a {
   border-radius: 5%;
   border: 10px solid #65b665;
   box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
+  cursor: pointer;
 }
 
 a:hover {
