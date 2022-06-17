@@ -36,7 +36,7 @@ export function addToBasket(plant_id, sid) {
 export function getBasketProducts(sid) {
   const select = /*sql*/ `
     SELECT plants.id, plants.plant_name, plant.price, plant.img_url
-    FROM basket JOIN products ON basket.product_id = products.id
+    FROM basket JOIN plants ON basket.plants_id = plants.id
     WHERE sid = $1
   `;
   return db.query(select, [sid]).then((res) => res.rows);
