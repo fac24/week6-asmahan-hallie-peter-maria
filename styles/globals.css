@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, Yeseva One, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -10,26 +10,12 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  order: 1;
-  flex-shrink: 1;
-  border-radius: 5%;
-  border: 10px solid #65b665;
-  box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
-  cursor: pointer;
+h1 {
+  margin: 0;
 }
 
-/* once user hovers then text and background colour changes */
-a:hover {
-  color: #3C8256;
-  background-color: #D5C991;
-}
-
-/* push down effect once user clicks down */
-a:active {
-  transform: translateY(0.938rem);
+p {
+  font-family: Yeseva One;
 }
 
 li {
@@ -72,3 +58,4 @@ img{
   object-fit:cover;
   position:relative;
 } */
+

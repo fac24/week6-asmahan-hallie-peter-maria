@@ -1,9 +1,9 @@
 import Layout from "../../components/layout";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../../styles/Home.module.css";
 // getting categories of plants
 import { getCategoryPlants, getAllIds } from "../../database/model.js";
-
 
 export async function getStaticPaths() {
   const allIds = await getAllIds();
@@ -20,7 +20,6 @@ export async function getStaticPaths() {
   };
 }
 
-
 export async function getStaticProps({ params }) {
   const categoryData = await getCategoryPlants(params.id);
   return {
@@ -30,41 +29,41 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Categories({categoryData}) {
+export default function Categories({ categoryData }) {
   return (
-    <Layout >
-        <div>
-      <section className="plants">
-        <ul>
-          {categoryData ? (
-            categoryData.map((plant) => (
-              <Link href={`/plant/${plant.id}`} key={plant.id}>
-                <a>
-                  <li>
-                    <div>
-                    <Image
-                        //  className={styles.singleImage}
-                         src={plant.img_url}
-                         height={200}
-                         width={250}
-                        //  layout={'responsive'}
-                        //  object-fit={'cover'}
-                         alt={plant.plant_name}
-                    />
-                      <h2>{plant.plant_name}</h2>
-                      <p>From £{plant.price - 2}</p>
-                    </div>
-                  </li>
-                </a>
-              </Link>
-            ))
-          ) : (
-            <li>No results found</li>
-          )}
-        </ul>
-      </section>
-    </div>
-    </Layout >
+    <Layout>
+      <div>
+        <section className="plants">
+          <ul>
+            {categoryData ? (
+              categoryData.map((plant) => (
+                <Link href={`/plant/${plant.id}`} key={plant.id}>
+                  <a className={styles.link}>
+                    <li>
+                      <div>
+                        <Image
+                          //  className={styles.singleImage}
+                          src={plant.img_url}
+                          height={200}
+                          width={250}
+                          //  layout={'responsive'}
+                          //  object-fit={'cover'}
+                          alt={plant.plant_name}
+                        />
+                        <h2>{plant.plant_name}</h2>
+                        <p>From £{plant.price - 2}</p>
+                      </div>
+                    </li>
+                  </a>
+                </Link>
+              ))
+            ) : (
+              <li>No results found</li>
+            )}
+          </ul>
+        </section>
+      </div>
+    </Layout>
   );
 }
 
