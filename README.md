@@ -7,10 +7,10 @@
 ### Built with React, next.JS and PostgreSQL. 
 
 # :blossom: Designed and developed by: 
-- Asmahan (UX/UI);
-- Hallie (DevOps);
-- Peter (Scrum Facilitator); and
-- Maria (QA)!
+- [Asmahan](https://github.com/AsmahanM) :UX/UI Lead
+- [Hallie](https://github.com/vasystus): DevOps
+- [Peter](https://github.com/PJSalter): Scrum Facilitator
+- [Maria](https://github.com/mariaalouisaa): Quality Assurance
 
 
 ## :bouquet: User Stories
