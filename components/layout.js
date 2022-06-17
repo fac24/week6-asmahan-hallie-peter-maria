@@ -39,6 +39,15 @@ export default function Layout({ children, home }) {
 
          <p>Plant a little love, watch a miracle grow.</p>
          <Search/>
+         <Link href="/basket">
+              <a>
+              <Link href="/basket">
+              <a>
+                {/* <img src="/images/cart.png" className="cart-image"></img> */}
+              </a>
+            </Link>
+              </a>
+        </Link>
          <main>{children}</main>
         </div>
         </>
