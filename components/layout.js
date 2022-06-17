@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
              <h1>{siteTitle}</h1>
              </>
          ) : (
-         <Link>
+         <Link href="/" >
             <a>
             <h1>{siteTitle}</h1>
              </a>
