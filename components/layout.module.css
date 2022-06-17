@@ -8,3 +8,12 @@
     text-align: center;
     justify-content: center;
 }
+
+.slogan {
+    color: rgb(61, 112, 60);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Yeseva+One;
+    padding-top: 0;
+    margin-top: none;
+}

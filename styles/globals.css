@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, Yeseva One, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -15,4 +15,18 @@ a {
   box-sizing: border-box;
 }
 
+header {
+  font-family: Droid Sans;
+  color: rgb(194, 116, 166);
+  font-size: 60px;
+  padding-bottom: none;
+}
 
+header :hover {
+  color: rgb(94, 147, 94);
+  transform: ease;
+}
+
+p {
+  font-family: Yeseva One;
+}

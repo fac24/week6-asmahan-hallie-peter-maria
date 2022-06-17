@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
         </Link>
          )}
          </header>
-         <p>Plant a little love, watch a miracle grow.</p>
+         <p className={styles.slogan}>Plant a little love, watch a miracle grow.</p>
          <main>{children}</main>
         
         </div>
