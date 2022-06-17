@@ -1,11 +1,11 @@
-\q#! /bin/sh
+#! /bin/sh
 
 # stop script when an error occurs
 set -e
 
 # name will be whatever the first argument is when called
 # e.g. ./scripts/create_db test => DB_NAME='test' (defaults to "example")
-DB_NAME=${1:-example}
+DB_NAME="littlegarden"
 
 
 psql -q -c "CREATE USER ${DB_NAME}user SUPERUSER PASSWORD 'pass123'"
