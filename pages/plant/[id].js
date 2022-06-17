@@ -35,7 +35,7 @@ export default function Plant({plantData}) {
     // const [quantity, setQuantity] = useState(1)
 
   return (
-    <Layout home >
+    <Layout >
          <div>
       <section className="plants">
           {plantData ? (
@@ -45,8 +45,8 @@ export default function Plant({plantData}) {
                     <Image
                         //  className={styles.singleImage}
                          src={plantData[0].img_url}
-                         height={200}
-                         width={250}
+                         height={300}
+                         width={400}
                          alt={plantData[0].plant_name}
                     />
                       <p>{plantData[0].plant_description}</p>
