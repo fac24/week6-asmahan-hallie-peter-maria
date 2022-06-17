@@ -41,13 +41,16 @@ export default function Layout({ children, home }) {
          <Search/>
          <Link href="/basket">
               <a>
-              <Link href="/basket">
-              <a>
-                {/* <img src="/images/cart.png" className="cart-image"></img> */}
+              {/* <img src="/shopping-cart.png" className="cart" alt="cart"></img> */}
+              <Image
+              className={styles.cart}
+              src="/shopping-cart.png"
+              height={50}
+              width={50}
+              alt="cart"
+             />
               </a>
-            </Link>
-              </a>
-        </Link>
+          </Link>
          <main>{children}</main>
         </div>
         </>
