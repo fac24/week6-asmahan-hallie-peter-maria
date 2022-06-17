@@ -27,3 +27,17 @@ export function getPlant(id) {
     return data.rows;
   });
 }
+
+export function addToBasket(plant_id, sid) {
+  const insert = `INSERT INTO basket (plant_id, sid) VALUES ($1, $2)`;
+  return db.query(insert, [plant_id, sid]);
+}
+
+export function getBasketProducts(sid) {
+  const select = /*sql*/ `
+    SELECT plants.id, plants.plant_name, plant.price, plant.img_url
+    FROM basket JOIN products ON basket.product_id = products.id
+    WHERE sid = $1
+  `;
+  return db.query(select, [sid]).then((res) => res.rows);
+}
