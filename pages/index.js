@@ -25,7 +25,7 @@ export default function Home({ categories }) {
           {categories.length ? (
             categories.map((category) => (
               <Link href={`/categories/${category.id}`} key={category.id}>
-                <a className={styles.individual}>
+                <a>
                   <li>
                     <div>
                       <h2>{category.plant_kind}</h2>
@@ -35,6 +35,7 @@ export default function Home({ categories }) {
               src={category.category_img}
               height={200}
               width={250}
+              // layout={'responsive'}
               alt={category.plant_kind}
             />
                   </li>
