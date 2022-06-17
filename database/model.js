@@ -20,3 +20,10 @@ export function getAllIds() {
     return result.rows;
   });
 }
+
+export function getPlant(id) {
+  const GET_PLANT = `SELECT * FROM plants WHERE id = $1`;
+  return db.query(GET_PLANT, [id]).then((data) => {
+    return data.rows;
+  });
+}
