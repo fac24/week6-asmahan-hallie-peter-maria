@@ -10,3 +10,24 @@
     color: #69b076;
 }
 
+.link {
+  color: inherit;
+  text-decoration: none;
+  order: 1;
+  flex-shrink: 1;
+  border-radius: 5%;
+  border: 10px solid #65b665;
+  box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
+  cursor: pointer;
+}
+
+/* once user hovers then text and background colour changes */
+.link:hover {
+  color: #3C8256;
+  background-color: #D5C991;
+}
+
+/* push down effect once user clicks down */
+.link:active {
+  transform: translateY(0.938rem);
+}
