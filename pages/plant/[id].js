@@ -1,8 +1,8 @@
 import Layout from "../../components/layout";
-import Link from "next/link";
 import Image from "next/image";
 // getting categories of plants
 import { getAllIds, getPlant } from "../../database/model.js";
+//import { useState } from "react/cjs/react.production.min";
 
 
 export async function getStaticPaths() {
@@ -31,39 +31,60 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Plant({plantData}) {
-    console.log(plantData)
+    // const [price, setPrice] = useState(plantData[0].price);
+    // const [quantity, setQuantity] = useState(1)
+
   return (
-    <Layout home >
-        <div>hi plant</div>
-        {/* <div>
+    <Layout >
+         <div>
       <section className="plants">
-        <ul>
-          {categoryData ? (
-            categoryData.map((plant) => (
-              <Link href={`/plant/${plant.id}`} key={plant.id}>
-                <a>
-                  <li>
+          {plantData ? (
+              <>
                     <div>
+                        <h2>{plantData[0].plant_name}</h2>
                     <Image
                         //  className={styles.singleImage}
-                         src={plant.img_url}
-                         height={200}
-                         width={250}
-                         alt={plant.plant_name}
+                         src={plantData[0].img_url}
+                         height={300}
+                         width={400}
+                         alt={plantData[0].plant_name}
                     />
-                      <h2>{plant.plant_name}</h2>
-                      <p>From £{plant.price}</p>
+                      <p>{plantData[0].plant_description}</p>
+                      <p>From £{plantData[0].price - 2}</p>
                     </div>
-                  </li>
-                </a>
-              </Link>
-            ))
+                    <form
+                     //onSubmit={handleSubmit} action="/api/basket"
+                     >
+                    <lable htmlFor="size">Select your size:</lable>
+                    <select 
+                    id="name"
+                    name="name"
+                    //We will need a use state to implement functinality
+                    //onChange={(e) => setSize(e.target.value)}
+                    >
+                     <option value="seedling"> Seedling £{plantData[0].price - 2}</option>
+                     <option value="small"> Small £{plantData[0].price}</option>
+                     <option value="medium"> Medium £{plantData[0].price + 3}</option>
+                    </select>
+                    <br></br>
+                    <label htmlFor="quantity"> Quantity </label>
+                    <input
+                    type="number"
+                    min="1"
+                     max="10"
+                    name="quantity"
+                    id="quantity"
+                    //onChange={(e) => setQuantity(e.target.value)}
+                     ></input>
+                     <button type="submit">Add to basket</button>
+                    </form>
+                    </>
+
           ) : (
-            <li>No results found</li>
+            <p>Product not found.</p>
           )}
-        </ul>
       </section>
-    </div> */}
+    </div> 
     </Layout >
   );
 }

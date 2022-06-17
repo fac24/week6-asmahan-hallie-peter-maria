@@ -6,13 +6,30 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  order: 1;
+  flex-shrink: 1;
+  border-radius: 5%;
+  border: 10px solid #65b665;
+  box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+/* once user hovers then text and background colour changes */
+a:hover {
+  color: #3C8256;
+  background-color: #D5C991;
+}
+
+/* push down effect once user clicks down */
+a:active {
+  transform: translateY(0.938rem);
 }
 
 header {
@@ -30,3 +47,43 @@ header :hover {
 p {
   font-family: Yeseva One;
 }
+li {
+  list-style: none;
+  flex: 50%;
+  margin-bottom: 2rem;
+  gap: 5%;
+  
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5rem;
+}
+
+@media only screen and (min-width: 1414px) {
+  ul {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+  }
+}
+
+img{
+   /* width: 100%;
+  height: auto;    */
+  object-fit:cover;
+  position:relative;
+}
+
+/* .plants{
+  width: 100%;
+  height:auto; 
+  object-fit:cover;
+  position:relative;
+} */
