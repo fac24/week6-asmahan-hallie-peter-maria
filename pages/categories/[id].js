@@ -47,6 +47,8 @@ export default function Categories({categoryData}) {
                          src={plant.img_url}
                          height={200}
                          width={250}
+                        //  layout={'responsive'}
+                        //  object-fit={'cover'}
                          alt={plant.plant_name}
                     />
                       <h2>{plant.plant_name}</h2>
