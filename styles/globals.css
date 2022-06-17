@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin-bottom: 0.85rem;
+  margin-top: 0
 }
 
 p {

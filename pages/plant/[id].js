@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 // getting categories of plants
 import { getPlant } from "../../database/model.js";
+import styles from "../../styles/Home.module.css";
 //import { useState } from "react/cjs/react.production.min";
 
 
@@ -38,10 +39,10 @@ export default function Plant({plantData}) {
                       <p>{plantData[0].plant_description}</p>
                       <p>From £{plantData[0].price - 2}</p>
                     </div>
-                    <form
+                    <form className={styles.productPage}
                      //onSubmit={handleSubmit} action="/api/basket"
                      >
-                    <lable htmlFor="size">Select your size:</lable>
+                    <label htmlFor="size">Select your size:</label>
                     <select 
                     id="name"
                     name="name"
@@ -52,6 +53,7 @@ export default function Plant({plantData}) {
                      <option value="small"> Small £{plantData[0].price}</option>
                      <option value="medium"> Medium £{plantData[0].price + 3}</option>
                     </select>
+                    <br></br>
                     <br></br>
                     <label htmlFor="quantity"> Quantity </label>
                     <input
