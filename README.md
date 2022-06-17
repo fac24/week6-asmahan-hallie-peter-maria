@@ -1,6 +1,9 @@
 # Little Garden 
 ### An e-commerce site for plant-lovers to buy fresh, home-grown plants.
 
+![Little-Garden](https://user-images.githubusercontent.com/45575016/174259557-442b89a5-5199-4086-b356-90cfc9e16bde.png)
+
+
 ### Built with React, next.JS and PostgreSQL. 
 
 Designed and developed by: 
