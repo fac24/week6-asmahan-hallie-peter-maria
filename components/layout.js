@@ -16,7 +16,6 @@ export default function Layout({ children, home }) {
          </Head>
 
             <div className={styles.container}>
-            <header className={styles.header}>
             <Image
             className={styles.container}
             src="/Little-Garden.png"
@@ -24,6 +23,7 @@ export default function Layout({ children, home }) {
             width={350}
             alt="logo"
              />
+            <header className={styles.header}>
              {home ? (
              <>
              <h1>{siteTitle}</h1>
