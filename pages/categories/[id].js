@@ -3,24 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 // getting categories of plants
-import { getCategoryPlants, getAllIds } from "../../database/model.js";
+import { getCategoryPlants } from "../../database/model.js";
 
-export async function getStaticPaths() {
-  const allIds = await getAllIds();
 
-  const paths = allIds.map((obj) => {
-    return {
-      params: { id: String(obj.id) },
-    };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const categoryData = await getCategoryPlants(params.id);
   return {
     props: {
