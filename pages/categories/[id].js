@@ -32,7 +32,7 @@ export async function getStaticProps({ params }) {
 
 export default function Categories({categoryData}) {
   return (
-    <Layout home >
+    <Layout >
         <div>
       <section className="plants">
         <ul>
