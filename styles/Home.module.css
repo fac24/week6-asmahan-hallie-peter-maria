@@ -31,3 +31,7 @@
 .link:active {
   transform: translateY(0.938rem);
 }
+
+.productPage {
+  margin-bottom: 10%;
+}
