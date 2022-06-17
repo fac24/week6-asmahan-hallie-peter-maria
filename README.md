@@ -42,6 +42,10 @@ Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 
 ![blossom](https://user-images.githubusercontent.com/45575016/174261298-1efdc22b-eee5-4824-abe1-a7362f87f1e2.gif)
 
+# Planning of design and features:
+
+![](https://i.imgur.com/zu00cbw.png)
+
 
 
 
