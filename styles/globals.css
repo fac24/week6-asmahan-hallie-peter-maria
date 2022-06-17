@@ -10,43 +10,14 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  order: 1;
-  flex-shrink: 1;
-  border-radius: 5%;
-  border: 10px solid #65b665;
-  box-shadow: rgb(34 112 72 / 80%) 5px 15px 15px;
-  cursor: pointer;
-}
-
-/* once user hovers then text and background colour changes */
-a:hover {
-  color: #3C8256;
-  background-color: #D5C991;
-}
-
-/* push down effect once user clicks down */
-a:active {
-  transform: translateY(0.938rem);
-}
-
-header {
-  font-family: Droid Sans;
-  color: rgb(194, 116, 166);
-  font-size: 60px;
-  padding-bottom: none;
-}
-
-header :hover {
-  color: rgb(94, 147, 94);
-  transform: ease;
+h1 {
+  margin: 0;
 }
 
 p {
   font-family: Yeseva One;
 }
+
 li {
   list-style: none;
   flex: 50%;
@@ -87,3 +58,4 @@ img{
   object-fit:cover;
   position:relative;
 } */
+
