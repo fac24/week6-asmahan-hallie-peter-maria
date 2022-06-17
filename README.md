@@ -6,21 +6,21 @@
 
 ### Built with React, next.JS and PostgreSQL. 
 
-Designed and developed by: 
+# :blossom: Designed and developed by: 
 - Asmahan (UX/UI);
 - Hallie (DevOps);
 - Peter (Scrum Facilitator); and
 - Maria (QA)!
 
 
-## User Stories
+## :bouquet: User Stories
 As a user, I want to:
 - [ ] browse the plants on your store;
 - [x] see each category of plant and click on one;
 - [ ] see a description of each product; and
 - [ ] select a product and select the size & quantity that I want
 
-## Visit the site (as a user):
+## :rose: Visit the site (as a user):
 
 Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 
@@ -35,7 +35,7 @@ Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-## Stretch goals:
+## :cactus: Stretch goals:
 - A shopping basket;
 - A search feature;
 - A 'sort-items by price' filter;
