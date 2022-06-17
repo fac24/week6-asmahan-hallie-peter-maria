@@ -17,6 +17,13 @@ CREATE TABLE plants (
     plant_description TEXT
 );
 
+CREATE TABLE basket (
+    id SERIAL PRIMARY KEY, 
+    plant_id INTEGER REFERENCES plants(id), 
+    sid TEXT
+);
+
+
 INSERT INTO plant_type (plant_kind, category_img) VALUES 
 ('succulents', 'https://images.unsplash.com/photo-1520302630591-fd1c66edc19d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'),
 ('herbs', 'https://images.unsplash.com/photo-1582012107971-5aae799a70f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'),
