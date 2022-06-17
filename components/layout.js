@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
          ) : (
          <Link href="/" >
             <a>
-            <h1>{siteTitle}</h1>
+            <h1 className={styles.pageHeader}>{siteTitle}</h1>
              </a>
         </Link>
          )}
