@@ -1,4 +1,4 @@
-# Little Garden 
+# :cherry_blossom: 🌻 Little Garden :hibiscus: :tulip:
 ### An e-commerce site for plant-lovers to buy fresh, home-grown plants.
 
 ![Little-Garden](https://user-images.githubusercontent.com/45575016/174259557-442b89a5-5199-4086-b356-90cfc9e16bde.png)
@@ -25,6 +25,9 @@ As a user, I want to:
 Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 
 
+![flower](https://user-images.githubusercontent.com/45575016/174260915-10084416-a9c5-4445-9035-2e528025877e.gif)
+
+
 ## Visit the site (as a developer):
 - `git clone (URL)`
 - Populate the database (`psql ???`)
@@ -36,6 +39,8 @@ Visit: https://week6-asmahan-hallie-peter-maria.vercel.app/
 - A shopping basket;
 - A search feature;
 - A 'sort-items by price' filter;
+
+![blossom](https://user-images.githubusercontent.com/45575016/174261298-1efdc22b-eee5-4824-abe1-a7362f87f1e2.gif)
 
 
 
