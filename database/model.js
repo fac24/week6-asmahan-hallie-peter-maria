@@ -14,13 +14,6 @@ export function getCategoryPlants(id) {
   });
 }
 
-export function getAllIds() {
-  const SELECT_ALL_IDs = `SELECT id FROM plants`;
-  return db.query(SELECT_ALL_IDs).then((result) => {
-    return result.rows;
-  });
-}
-
 export function getPlant(id) {
   const GET_PLANT = `SELECT * FROM plants WHERE id = $1`;
   return db.query(GET_PLANT, [id]).then((data) => {

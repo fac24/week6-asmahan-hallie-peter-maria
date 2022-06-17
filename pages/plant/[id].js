@@ -1,27 +1,13 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 // getting categories of plants
-import { getAllIds, getPlant } from "../../database/model.js";
+import { getPlant } from "../../database/model.js";
 //import { useState } from "react/cjs/react.production.min";
 
 
-export async function getStaticPaths() {
-  const allPlantIds = await getAllIds();
-
-  const paths = allPlantIds.map((obj) => {
-    return {
-      params: { id: String(obj.id) },
-    };
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
 
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const plantData = await getPlant(params.id);
   return {
     props: {

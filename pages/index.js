@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout, {siteTitle} from "../components/layout";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const categories = await getCategories();
   return {
     props: {
