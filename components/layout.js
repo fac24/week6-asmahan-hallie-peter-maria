@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-//import PlantImages from "next/images"
 import styles from './layout.module.css'; 
 
 export const siteTitle = "Little Garden"
@@ -10,20 +9,22 @@ export const siteTitle = "Little Garden"
 // home is an argument sent only from the home root Layout component - if "home" is not then return a title that links back to "/" 
 export default function Layout({ children, home }) {
     return (
-        <div className={styles.container}>
+        <>
+        <Head>
+         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+         <title>{siteTitle}</title>
+         </Head>
+
+            <div className={styles.container}>
+            <header className={styles.header}>
             <Image
             className={styles.container}
             src="/Little-Garden.png"
             height={350}
             width={350}
             alt="logo"
-          />
-         <Head>
-         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-         <title>{siteTitle}</title>
-         </Head>
-         <header className={styles.header}>
-         {home ? (
+             />
+             {home ? (
              <>
              <h1>{siteTitle}</h1>
              </>
@@ -35,13 +36,11 @@ export default function Layout({ children, home }) {
         </Link>
          )}
          </header>
+
          <p>Plant a little love, watch a miracle grow.</p>
          <main>{children}</main>
-        
         </div>
+        </>
     )
 }
-
-//NOTE: please add href="/" to <Link> with the <a>
-// We just had to remove it for now for vercel happiness 
 
