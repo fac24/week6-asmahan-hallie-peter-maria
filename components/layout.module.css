@@ -8,3 +8,21 @@
     text-align: center;
     justify-content: center;
 }
+
+.search {
+    background-color: #fff;
+    text-align: left;
+    width: 15%;
+    margin: 0;
+    padding: 12px;
+}
+
+.visually_hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+}

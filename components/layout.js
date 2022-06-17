@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 //import PlantImages from "next/images"
 import styles from './layout.module.css'; 
-
+import Search from "./search.js"
 export const siteTitle = "Little Garden"
 
 // The children argument is all of the elemnents nested on the Layout component (in index.js)
@@ -36,6 +36,7 @@ export default function Layout({ children, home }) {
          )}
          </header>
          <p>Plant a little love, watch a miracle grow.</p>
+         <Search/>
          <main>{children}</main>
         
         </div>
